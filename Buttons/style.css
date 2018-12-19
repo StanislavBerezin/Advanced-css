@@ -310,7 +310,7 @@ Gradient button #2
     color: orangered;
     outline: none;
     -webkit-transition: all 0.3s ease;
-    transition: ease-in-out 1s;
+    transition: all 0.3s ease;
 }
 
 
@@ -318,6 +318,7 @@ Gradient button #2
     background-size: 100%;
     background-image: linear-gradient(to right, orangered, transparent);
     border-right-style: none;
+
     color: white;
 }
 
