@@ -507,16 +507,20 @@ TOGGLE #2
     cursor: pointer;
 }
 
+/* this is the square tickbox inside of it */
 .toggle-2__button:before {
     position: absolute;
     top: 10px;
     left: 10px;
     right: auto;
     display: inline-block;
+    /* making a square */
     width: 10px;
     height: 10px;
     background-color: #cccccc;
     content: "";
+    /* circle */
+    border-radius: 100%;
     transition: all 0.3s ease;
 }
 
