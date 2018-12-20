@@ -1,0 +1,13 @@
+.vars {
+    --text-color: white;
+    --anything-u-want: green;
+    --base: 20px;
+
+}
+
+.access {
+    background-color: var(--anything-u-want);
+    margin: var(--base);
+    /* if need to multiply */
+    height: calc(var(--base)*10);
+}
