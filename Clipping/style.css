@@ -1,0 +1,86 @@
+.main {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 50px 0px 100px 0px;
+}
+
+/* SHOULD USE: https://bennettfeely.com/clippy/
+to get a better understanding of how to clip it */
+
+.clip-image-1 {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  /* it clips the image as if there is an invisible 
+  border, 50% is optimal for this 
+  the smaller the first one, the smaller the circle
+  the next 2 numbers are horizontal and vertical*/
+  clip-path: circle(50% at 50% 50%);
+}
+
+
+.clip-image-2 {
+  -webkit-clip-path: polygon(0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%);
+  /*  */
+  clip-path: polygon(10% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%);
+}
+
+
+.clip-image-3 {
+  -webkit-clip-path: polygon(20% 0%,
+    0% 20%,
+    30% 50%,
+    0% 80%,
+    20% 100%,
+    50% 70%,
+    80% 100%,
+    100% 80%,
+    70% 50%,
+    100% 20%,
+    80% 0%,
+    50% 30%);
+  clip-path: polygon(20% 0%,
+    0% 20%,
+    30% 50%,
+    0% 80%,
+    20% 100%,
+    50% 70%,
+    80% 100%,
+    100% 80%,
+    70% 50%,
+    100% 20%,
+    80% 0%,
+    50% 30%);
+}
+
+
+.clip-image-4 {
+  -webkit-clip-path: polygon(0% 20%,
+    40% 20%,
+    40% 0%,
+    100% 50%,
+    40% 100%,
+    40% 80%,
+    0% 80%);
+  clip-path: polygon(0% 20%,
+    40% 20%,
+    40% 0%,
+    100% 50%,
+    40% 100%,
+    40% 80%,
+    0% 80%);
+}

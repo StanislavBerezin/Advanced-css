@@ -1,0 +1,40 @@
+.main {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 50px 0px 100px 0px;
+}
+
+img.image {
+  position: relative;
+  display: inline-block;
+  font-family: Arial, sans serif;
+  font-size: 0.7em;
+  text-align: center;
+  height: 10px;
+  text-transform: uppercase;
+}
+
+img.image:after {
+  display: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 200px;
+  padding: 10px 20px 10px 45px;
+  border: 1px dashed #888888;
+  background-color: #f0f0f0;
+  background-image: url(noimage.png);
+  /* the size of the image */
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: 15px 4px;
+  z-index: 1;
+  /* this is the crucial point of displaying the content 
+  alt is looking for attribue of that image and adds NOT FOUND*/
+  content: ""attr(alt) " Not Found";
+}
