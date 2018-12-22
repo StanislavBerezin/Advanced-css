@@ -1,0 +1,22 @@
+html,
+/* height to body should be given */
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* page content to be set */
+.page-content {
+    min-height: 100%;
+
+    /* same measurement as footer */
+    margin-bottom: -120px;
+}
+
+
+
+footer,
+.page-content::after {
+    border: 2px solid red;
+    height: 120px;
+}
